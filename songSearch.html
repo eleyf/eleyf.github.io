@@ -33,12 +33,16 @@
 
             <form>
 
-                <div class="form-group">
-                    <label for="exampleSongSearch">Search for song by Title</label>
-                    <input type="text" class="form-control" id="exampleSongSearch" placeholder="Song Name">
-                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <input type="text" class="form-control" id="exampleSongSearch"
+                               placeholder="Search for Song Name">
+                    </div>
 
-                <button type="submit" class="btn btn-primary">SEARCH</button>
+                    <div>
+                        <button type="submit" class="btn btn-primary">SEARCH</button>
+                    </div>
+                </div>
             </form>
         </div>
 
@@ -51,6 +55,7 @@
                     <th scope="col">Name</th>
                     <th scope="col">Album</th>
                     <th scope="col">Artist</th>
+                    <th scope="col">Actions</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -59,18 +64,30 @@
                     <td>Kiss</td>
                     <td>Parade</td>
                     <td>Prince</td>
+                    <td>
+                        <a href="songEdit.html" class="btn btn-info" style="margin-right: 15px">EDIT</a>
+                        <input type="button" value="DELETE" class="btn btn-danger">
+                    </td>
                 </tr>
                 <tr>
                     <th scope="row">2</th>
                     <td>This Love</td>
                     <td>Songs About Jane</td>
                     <td>Maroon 5</td>
+                    <td>
+                        <a href="songEdit.html" class="btn btn-info" style="margin-right: 15px">EDIT</a>
+                        <input type="button" value="DELETE" class="btn btn-danger">
+                    </td>
                 </tr>
                 <tr>
                     <th scope="row">3</th>
                     <td>Get Lucky</td>
                     <td>Random Access Memories</td>
                     <td>Daft Punk</td>
+                    <td>
+                        <a href="songEdit.html" class="btn btn-info" style="margin-right: 15px">EDIT</a>
+                        <input type="button" value="DELETE" class="btn btn-danger">
+                    </td>
                 </tr>
                 </tbody>
             </table>
