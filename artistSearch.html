@@ -12,17 +12,86 @@
     <title>Artist Search</title>
 </head>
 <body>
-<nav class="navbar navbar-light bg-light">
-    <a class="navbar-brand" href="index.html">HOME</a>
-</nav>
+<div class="container-fluid">
+    <div class="container">
 
-<br>
-<a href="artistAdd.html" class="btn btn-success">Add An Artist To The Database</a>
-<br>
+        <div>
+            <nav class="navbar navbar-light bg-light">
+                <a class="navbar-brand" href="index.html">HOME</a>
+            </nav>
+        </div>
 
-<h1>Artist Search</h1>
+        <div>
+            <br>
+            <a href="artistAdd.html" class="btn btn-success">Add An Artist To The Database</a>
+            <br>
+        </div>
+
+        <div>
+            <br>
+            <br>
+
+            <form>
+
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <input type="text" class="form-control" id="exampleArtistSearch"
+                               placeholder="Search for Artist">
+                    </div>
+
+                    <div>
+                        <button type="submit" class="btn btn-primary">SEARCH</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div>
+            <br>
+            <table class="table table-striped">
+                <thead class="thead-dark">
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Artist</th>
+                    <th scope="col">Actions</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Prince</td>
+                    <td>
+                        <a href="artistEdit.html" class="btn btn-info" style="margin-right: 15px">EDIT</a>
+                        <input type="button" value="DELETE" class="btn btn-danger">
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Maroon 5</td>
+                    <td>
+                        <a href="artistEdit.html" class="btn btn-info" style="margin-right: 15px">EDIT</a>
+                        <input type="button" value="DELETE" class="btn btn-danger">
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Daft Punk</td>
+                    <td>
+                        <a href="artistEdit.html" class="btn btn-info" style="margin-right: 15px">EDIT</a>
+                        <input type="button" value="DELETE" class="btn btn-danger">
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
+
+    </div>
+</div>
+
 
 <!-- Optional JavaScript -->
+
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
