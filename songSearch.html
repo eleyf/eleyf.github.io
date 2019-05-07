@@ -20,9 +20,79 @@
 <a href="songAdd.html" class="btn btn-success">Add A Song To The Database</a>
 <br>
 
-<h1>Song Search</h1>
+
+<br>
+<br>
+
+<form>
+
+    <div class="form-group">
+        <label for="exampleSongSearch">Search for song by Title</label>
+        <input type="text" class="form-control" id="exampleSongSearch" placeholder="Song Name">
+    </div>
+
+    <button type="submit" class="btn btn-primary">SEARCH</button>
+</form>
+
+
+
+
+<br>
+<table class="table table-striped">
+    <thead class="thead-dark">
+    <tr>
+        <th scope="col">#</th>
+        <th scope="col">Name</th>
+        <th scope="col">Album</th>
+        <th scope="col">Artist</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <th scope="row">1</th>
+        <td>Kiss</td>
+        <td>Parade</td>
+        <td>Prince</td>
+    </tr>
+    <tr>
+        <th scope="row">2</th>
+        <td>This Love</td>
+        <td>Songs About Jane</td>
+        <td>Maroon 5</td>
+    </tr>
+    <tr>
+        <th scope="row">3</th>
+        <td>Get Lucky</td>
+        <td>Random Access Memories</td>
+        <td>Daft Punk</td>
+    </tr>
+    </tbody>
+</table>
+
+<!--<div>-->
+
+<!--    <table class = "table table-striped table-bordered">-->
+
+<!--        <thead class="thead-dark">-->
+<!--        <tr>-->
+<!--            <th class="hiddenId">ID</th>-->
+<!--            <th>NAME</th>-->
+<!--            <th>ALBUM</th>-->
+<!--            <th>ARTIST</th>-->
+<!--        </tr>-->
+<!--        </thead>-->
+
+<!--        <tbody id = "tableBodyId">-->
+
+<!--        </tbody>-->
+<!--        &lt;!&ndash; table body created in frontend.js &ndash;&gt;-->
+
+<!--    </table>-->
+<!--</div>-->
 
 <!-- Optional JavaScript -->
+<script src="js/songSearch.js"></script>
+
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
